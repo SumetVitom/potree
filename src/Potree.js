@@ -75,6 +75,15 @@ export {EarthControls} from "./navigation/EarthControls.js";
 export {DeviceOrientationControls} from "./navigation/DeviceOrientationControls.js";
 export {VRControls} from "./navigation/VRControls.js";
 
+// cmair export //
+export {ProfileWindow} from "./viewer/profile.js"
+export {MeasurePanel} from "./viewer/PropertyPanels/MeasurePanel.js"
+export {DistancePanel} from "./viewer/PropertyPanels/DistancePanel.js"
+export {EDLRenderer} from "./viewer/EDLRenderer.js"
+export {PotreeRenderer} from "./viewer/PotreeRenderer.js"
+export {HQSplatRenderer} from "./viewer/HQSplatRenderer.js"
+//////////////////
+
 import "./extensions/OrthographicCamera.js";
 import "./extensions/PerspectiveCamera.js";
 import "./extensions/Ray.js";
