@@ -82,7 +82,7 @@ function loadPointCloud(viewer, data){
 	return promise;
 }
 
-function loadMeasurement(viewer, data){
+export function loadMeasurement(viewer, data){
 
 	const duplicate = viewer.scene.measurements.find(measure => measure.uuid === data.uuid);
 	if(duplicate){
@@ -113,7 +113,7 @@ function loadMeasurement(viewer, data){
 
 }
 
-function loadVolume(viewer, data){
+export function loadVolume(viewer, data){
 
 	const duplicate = viewer.scene.volumes.find(volume => volume.uuid === data.uuid);
 	if(duplicate){
@@ -240,7 +240,7 @@ function loadAnnotationItem(item){
 	return annotation;
 }
 
-function loadAnnotations(viewer, data){
+export function loadAnnotations(viewer, data){
 
 	if(!data){
 		return;
@@ -282,7 +282,7 @@ function loadAnnotations(viewer, data){
 
 }
 
-function loadProfile(viewer, data){
+export function loadProfile(viewer, data){
 	
 	const {name, points} = data;
 
