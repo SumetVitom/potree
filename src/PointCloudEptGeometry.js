@@ -139,7 +139,7 @@ export class PointCloudEptGeometry extends BaseGeometry {
 		this.type = 'ept';
 		this.base = base;
 		this.ept = ept;
-
+        this.points = ept.points;
 		this.loader = (() => {
 			switch (ept.dataType) {
 				case 'laszip': return new Potree.EptLaszipLoader()
