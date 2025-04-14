@@ -94,7 +94,9 @@ export class HQSplatRenderer{
 			renderer.setClearColor(0x000000, 1);
 		} else if (background === 'white') {
 			renderer.setClearColor(0xFFFFFF, 1);
-		} else {
+		}else if (viewer.background === 'gray') {
+            renderer.setClearColor(0xD3D3D3, 1);
+        } else {
 			renderer.setClearColor(0x000000, 0);
 		}
 
@@ -278,7 +280,10 @@ export class HQSplatRenderer{
 		} else if (viewer.background === 'white') {
 			viewer.renderer.setClearColor(0xFFFFFF, 1);
 			viewer.renderer.clear();
-		} else {
+		}else if (viewer.background === 'gray') {
+            viewer.renderer.setClearColor(0xD3D3D3, 1);
+            viewer.renderer.clear();
+        } else {
 			viewer.renderer.setClearColor(0x000000, 0);
 			viewer.renderer.clear();
 		}
