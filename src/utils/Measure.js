@@ -685,7 +685,7 @@ export class Measure extends THREE.Object3D {
 					suffix = this.lengthUnitDisplay.code;
 				}
 
-				let txtLength = Utils.addCommas(distance.toFixed(2));
+				let txtLength = Utils.addCommas(distance.toFixed(4));
 				edgeLabel.setText(`${txtLength} ${suffix}`);
 				edgeLabel.visible = this.showDistances && (index < lastIndex || this.closed) && this.points.length >= 2 && distance > 0;
 			}

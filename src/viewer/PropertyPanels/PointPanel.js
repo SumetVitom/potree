@@ -8,7 +8,7 @@ export class PointPanel extends MeasurePanel{
 
 		let removeIconPath = Potree.resourcePath + '/icons/remove.svg';
 		this.elContent = $(`
-			<div class="measurement_content selectable">
+			<div class="measurement_content selectable scene-hidden">
 				<span class="coordinates_table_container"></span>
 				<br>
 				<span class="attributes_table_container"></span>
