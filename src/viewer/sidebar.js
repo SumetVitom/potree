@@ -1367,7 +1367,7 @@ export class Sidebar{
 	}
 
 	initNavigation(){
-		let elNavigation = $('#navigation');
+		let elNavigation = $('#potree-navigation');
 		let sldMoveSpeed = $('#sldMoveSpeed');
 		let lblMoveSpeed = $('#lblMoveSpeed');
 
