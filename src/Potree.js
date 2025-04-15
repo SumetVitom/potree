@@ -2,6 +2,8 @@
 export * from "./Actions.js";
 export * from "./AnimationPath.js";
 export * from "./Annotation.js";
+// cmair class
+export * from "./Annotation_Custom.js";
 export * from "./defines.js";
 export * from "./Enum.js";
 export * from "./EventDispatcher.js";
