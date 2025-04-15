@@ -82,6 +82,8 @@ export {DistancePanel} from "./viewer/PropertyPanels/DistancePanel.js"
 export {EDLRenderer} from "./viewer/EDLRenderer.js"
 export {PotreeRenderer} from "./viewer/PotreeRenderer.js"
 export {HQSplatRenderer} from "./viewer/HQSplatRenderer.js"
+export {PropertiesPanel} from "./viewer/PropertyPanels/PropertiesPanel.js"
+export {VolumePanel} from "./viewer/PropertyPanels/VolumePanel.js"
 //////////////////
 
 import "./extensions/OrthographicCamera.js";

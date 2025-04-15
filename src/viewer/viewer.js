@@ -1761,6 +1761,13 @@ export class Viewer extends EventDispatcher{
 				
 				camera.near = near;
 				camera.far = far;
+                
+                //FOR CMAIR
+                if(this.cameraNearFarEnabled){
+                    camera.near = this.cameraNear;
+                    camera.far = this.cameraFar;
+                }
+                
 			}else{
 				// don't change near and far in this case
 			}
