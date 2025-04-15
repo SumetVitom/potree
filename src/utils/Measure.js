@@ -615,7 +615,19 @@ export class Measure extends THREE.Object3D {
 				let coordinateLabel = this.coordinateLabels[0];
 				
 				let msg = position.toArray().map(p => Utils.addCommas(p.toFixed(2))).join(" / ");
-				coordinateLabel.setText(msg);
+
+                // added by cmair
+                if(this.name === 'GeoCoord') {
+                    if(this.geo_coord) {
+                        coordinateLabel.setText(`${this.geo_coord}: ${msg}`);
+                    }
+                }
+                else {
+                    coordinateLabel.setText(msg);
+                }
+
+                // removed by cmair
+                //coordinateLabel.setText(msg);
 
 				coordinateLabel.visible = this.showCoordinates;
 			}
